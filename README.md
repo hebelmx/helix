@@ -9,6 +9,8 @@ This project provides a comprehensive solution for controlling an inverter and a
 - [Architecture](#architecture)
 - [Installation](#installation)
 - [Usage](#usage)
+- ## GUI Controls:
+
 - [GUI Components](#gui-components)
 - [CAN Messages and PLC Communication](#can-messages-and-plc-communication)
 - [Error Handling](#error-handling)
@@ -64,7 +66,21 @@ The application consists of the following main components:
 1. **Run the Application**:
    ```bash
    python inverter_control.py
+
 ## GUI Controls:
+
+- **System State**: Set the system state of the inverter.
+- **Control Mode**: Set the control mode of the inverter.
+- **Torque Setpoint**: Set the torque setpoint for the inverter.
+- **Enable Drive**: Enable or disable the drive.
+- **Direction of Rotation**: Set the direction of rotation for the motor.
+- **Activate PLC Output**: Activate a specified PLC output.
+- **Read PLC Input**: Read a specified PLC input.
+- **View Real-Time Graphs**: Monitor real-time graphs for current, speed, and torque.
+
+### Real-Time Graphs
+
+The GUI displays real-time graphs for current, speed, and torque, updating automatically as data is received from the inverter.
 
 ## GUI Components
 
@@ -77,11 +93,8 @@ The application consists of the following main components:
 - **PLC Control**: Buttons to activate PLC output and read PLC input.
 - **Graphs**: Real-time graphs for current, speed, and torque using Matplotlib.
 
-### Real-Time Graphs
 
-The GUI displays real-time graphs for current, speed, and torque, updating automatically as data is received from the inverter.
-
-## CAN Messages and PLC Communication
+## Communications
 
 ### CAN Messages
 
