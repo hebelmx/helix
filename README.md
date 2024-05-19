@@ -9,10 +9,11 @@ This project provides a comprehensive solution for controlling an inverter and a
 - [Architecture](#architecture)
 - [Installation](#installation)
 - [Usage](#usage)
-- ## GUI Controls:
-
+- [GUI Controls](#gui-Controls)
 - [GUI Components](#gui-components)
-- [CAN Messages and PLC Communication](#can-messages-and-plc-communication)
+- [Communications](#communications)
+- [CAN Messages](#can-messages)
+- [PLC Communication](#plc-communication)
 - [Error Handling](#error-handling)
 - [Logging](#logging)
 - [Contributing](#contributing)
