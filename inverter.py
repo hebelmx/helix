@@ -297,8 +297,9 @@ if __name__ == "__main__":
     # Start the CAN message receiver in a separate thread to avoid blocking the GUI
     def can_receiver():
         while True:
-            msg = controller.bus.recv()
-            controller.receive_message(msg)
+            if not TESTING:
+                msg = controller.bus.recv()
+                controller.receive_message(msg)
     
     threading.Thread(target=can_receiver, daemon=True).start()
 
